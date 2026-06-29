@@ -295,7 +295,7 @@ footer { background:var(--text); text-align:center; padding:1.5rem; font-size:0.
         <div class="stat-label">Records Processed</div>
       </div>
       <div>
-        <div class="stat-num"><span class="countup" data-target="4">4</span></div>
+        <div class="stat-num"><span class="countup" data-target="5">5</span></div>
         <div class="stat-label">Published Projects</div>
       </div>
       <div>
@@ -359,7 +359,32 @@ footer { background:var(--text); text-align:center; padding:1.5rem; font-size:0.
   </div>
   <div class="projects-list">
 
-    <!-- P1 E-COMMERCE -->
+    <!-- P1 WHO -->
+    <div class="project-row reveal">
+      <div class="proj-panel" style="background:linear-gradient(135deg,#1a3a4a,#0d2233);">
+        <div class="proj-panel-inner">
+          <img src="screenshot/page1_global_overview.png" class="proj-screenshot" alt="WHO Global Health Dashboard">
+        </div>
+      </div>
+      <div class="project-content">
+        <div class="project-num">01 · Python · Dash · Live App</div>
+        <div class="project-title">WHO Global Health Analytics Dashboard</div>
+        <p class="project-desc">Built a deployed web application analysing WHO health data across 193 countries and 16 years, covering the full pipeline from raw data ingestion to statistical analysis and interactive visualisation.</p>
+        <div class="proj-hls">
+          <div class="proj-hl">3-pass median imputation pipeline cleaning WHO records across 193 countries</div>
+          <div class="proj-hl">Linear regression across 2,509 country-indicator pairs and z-score anomaly detection flagging 2,046 health shocks</div>
+          <div class="proj-hl">Schooling identified as strongest predictor of life expectancy (r=0.728), outperforming GDP and health expenditure</div>
+          <div class="proj-hl">Deployed on Hugging Face Spaces via Docker with GitHub Actions maintaining zero-cost uptime</div>
+        </div>
+        <div class="proj-tags"><span class="tag ac">Python</span><span class="tag ac">Dash</span><span class="tag ac">Plotly</span><span class="tag">Pandas</span><span class="tag">SciPy</span><span class="tag">Docker</span></div>
+        <div style="display:flex;gap:1rem;margin-top:auto;">
+          <a href="https://pro580-who-global-health-dashboard.hf.space" target="_blank" rel="noopener" class="proj-link">Live App <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 3H13V6M13 3L8 8M6 4H4C3.44772 4 3 4.44772 3 5V12C3 12.5523 3.44772 13 4 13H11C11.5523 13 12 12.5523 12 12V10"/></svg></a>
+          <a href="https://github.com/prolynk/who-global-health-dashboard" target="_blank" rel="noopener" class="proj-link">GitHub <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 3H13V6M13 3L8 8M6 4H4C3.44772 4 3 4.44772 3 5V12C3 12.5523 3.44772 13 4 13H11C11.5523 13 12 12.5523 12 12V10"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- P2 E-COMMERCE -->
     <div class="project-row reveal">
       <div class="proj-panel p1-bg">
         <div class="proj-panel-inner">
@@ -367,7 +392,7 @@ footer { background:var(--text); text-align:center; padding:1.5rem; font-size:0.
         </div>
       </div>
       <div class="project-content">
-        <div class="project-num">01 · Power BI</div>
+        <div class="project-num">02 · Power BI</div>
         <div class="project-title">E-Commerce Sales Performance</div>
         <p class="project-desc">Cleaned and transformed 96,000+ order records in Power Query, handling null delivery dates, data type mismatches and Portuguese-to-English category translations across 6 relational tables. Identified that 8.1% of orders were delivered late, with northern Brazilian states showing the strongest correlation between slow delivery and low satisfaction scores.</p>
         <div class="proj-hls">
@@ -380,7 +405,7 @@ footer { background:var(--text); text-align:center; padding:1.5rem; font-size:0.
       </div>
     </div>
 
-    <!-- P2 HR -->
+    <!-- P3 HR -->
     <div class="project-row reveal">
       <div class="proj-panel p2-bg">
         <div class="proj-panel-inner">
@@ -388,7 +413,7 @@ footer { background:var(--text); text-align:center; padding:1.5rem; font-size:0.
         </div>
       </div>
       <div class="project-content">
-        <div class="project-num">02 · Power BI</div>
+        <div class="project-num">03 · Power BI</div>
         <div class="project-title">HR & Workforce Analytics</div>
         <p class="project-desc">Workforce attrition and compensation analysis using the IBM HR dataset of 1,470 employees. Surfaced which departments, roles and conditions drive turnover, including the overtime effect on attrition.</p>
         <div class="proj-hls">
@@ -401,7 +426,7 @@ footer { background:var(--text); text-align:center; padding:1.5rem; font-size:0.
       </div>
     </div>
 
-    <!-- P3 FINANCIAL -->
+    <!-- P4 FINANCIAL -->
     <div class="project-row reveal">
       <div class="proj-panel p3-bg">
         <div class="proj-panel-inner">
@@ -409,21 +434,21 @@ footer { background:var(--text); text-align:center; padding:1.5rem; font-size:0.
         </div>
       </div>
       <div class="project-content">
-        <div class="project-num">03 · Power BI</div>
+        <div class="project-num">04 · Power BI</div>
         <div class="project-title">Financial Performance & P&L</div>
         <p class="project-desc">End-to-end financial dashboard analysing 2 years of P&L data across 5 business segments and 5 countries, tracking revenue, COGS, gross profit and discount impact in a single interactive report.</p>
         <div class="proj-hls">
           <div class="proj-hl a">Government segment identified as highest performer with over $53M in sales</div>
           <div class="proj-hl a">349% YoY revenue growth from 2013 to 2014 uncovered, with Paseo as most profitable product</div>
           <div class="proj-hl a">Waterfall chart decomposing full P&L to a gross profit margin of 14.23%</div>
-          <div class="proj-hl a">Germany led all countries by profit margin, with Germany and USA as top markets</div>
+          <div class="proj-hl a">Germany led all countries by profit margin with USA as second top market</div>
         </div>
         <div class="proj-tags"><span class="tag ac">Power BI</span><span class="tag ac">DAX</span><span class="tag">Power Query</span><span class="tag">Excel</span><span class="tag am">P&L Analysis</span></div>
         <a href="https://github.com/habeeb-prog/powerbi_financial_dashboard" target="_blank" rel="noopener" class="proj-link">View on GitHub <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 3H13V6M13 3L8 8M6 4H4C3.44772 4 3 4.44772 3 5V12C3 12.5523 3.44772 13 4 13H11C11.5523 13 12 12.5523 12 12V10"/></svg></a>
       </div>
     </div>
 
-    <!-- P4 CUSTOMER -->
+    <!-- P5 CUSTOMER -->
     <div class="project-row reveal">
       <div class="proj-panel p4-bg">
         <div class="proj-panel-inner">
@@ -431,7 +456,7 @@ footer { background:var(--text); text-align:center; padding:1.5rem; font-size:0.
         </div>
       </div>
       <div class="project-content">
-        <div class="project-num">04 · Power BI</div>
+        <div class="project-num">05 · Power BI</div>
         <div class="project-title">Customer & Marketing Analytics</div>
         <p class="project-desc">Analysed 3 years of sales data across multiple product lines, deal sizes and countries to build a complete picture of customer value and purchasing behaviour across $9.29M in total sales.</p>
         <div class="proj-hls">
